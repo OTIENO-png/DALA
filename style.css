@@ -1,0 +1,282 @@
+ @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+ body {
+     overflow-x: hidden;
+     min-height: 100vh;
+     width: 100%;
+     position: relative;
+ }
+
+ body.dark-mode {
+     background-color: #1a1a1a;
+     color: #e6e6e6;
+ }
+
+ body.bright-mode {
+     background-color: #ffffff;
+     color: #333333;
+ }
+
+ .column {
+     float: left;
+     width: 30%;
+     padding: 5px;
+
+     /* text-align: center;*/
+ }
+
+ .card:hover .image {
+     opacity: 0.5;
+ }
+
+ .card:hover .middle {
+     opacity: 10;
+ }
+
+ #designtext {
+     display: none;
+ }
+
+ #developmenttext {
+     display: none;
+ }
+
+ #producttext {
+     display: none;
+ }
+
+ #home {
+     height: 750px;
+     background-image: url("image/man.jpg");
+     background-repeat: no-repeat;
+     padding-top: 100px;
+     text-align: center;
+
+ }
+
+ #logo {
+     padding-bottom: 50px;
+ }
+
+ .logo {
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+ }
+
+ #contact {
+     display: block;
+     width: 100%;
+     height: 500px;
+     background-image: url("image/laptop.jpg");
+     background-repeat: no-repeat;
+     text-align: center;
+
+ }
+
+ #four {
+     display: block;
+     min-height: 100vh;
+     width: 100%;
+     background-image: url("image/working.jpg");
+     background-repeat: no-repeat;
+     padding-right: 200px;
+     padding-top: 100px;
+     text-align: center;
+ }
+
+ #three {
+     padding-left: 200px;
+     padding-right: 200px;
+     padding-top: 200px;
+ }
+
+ #heading {
+     padding-top: 200px;
+ }
+
+ body {
+     background: color #121212;
+     text-align: center;
+ }
+
+ /* navigation bar styling */
+ .container {
+     width: 100%;
+     background-color: #555;
+     overflow: auto;
+     position: fixed;
+     float: left;
+     top: 0;
+     color: white;
+     text-decoration: none;
+     font-size: 17px;
+     text-align: center;
+     padding: 0px;
+
+ }
+
+ @media screen and (max-width: 500px) {
+     .navbar a {
+         float: none;
+         display: block;
+         width: 100%;
+         text-align: left;
+         margin-left: 20%;
+         margin-right: 20%;
+     }
+ }
+
+ a:link {
+     text-decoration: none;
+ }
+
+ a:visited {
+     text-decoration: none;
+     background-color: white;
+ }
+
+ a:active {
+     text-decoration: underline;
+ }
+
+ img {
+     cursor: pointer;
+ }
+
+ /* animations. */
+ .card {
+     animation-duration: 3s;
+     animation-name: slidein;
+     text-align: center;
+
+ }
+
+ @keyframes slidein {
+     from {
+         margin-left: 100%;
+         width: 300%;
+     }
+
+     75% {
+         font-size: 300%;
+         margin-left: 25%;
+         width: 150%;
+     }
+
+     to {
+         margin-left: 0%;
+         width: 100%;
+     }
+ }
+
+ button:hover {
+     box-shadow: 0 0 25px cyan,
+         0 0 25px cyan, 0 0 50px cyan,
+         0 0 100px cyan, 0 0 200px cyan;
+ }
+
+ .nav_bar:hover {
+     box-shadow: 0 0 25px cyan,
+         0 0 25px cyan, 0 0 50px cyan,
+         0 0 100px cyan, 0 0 200px cyan;
+ }
+
+ .footer {
+     text-align: center;
+ }
+
+ #about {
+     text-align: center;
+ }
+
+ /* Responsive layout - makes a two column-layout instead of four columns */
+ @media screen and (max-width: 800px) {
+     .column {
+         -ms-flex: 50%;
+         flex: 50%;
+         max-width: 50%;
+     }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 600px) {
+     .column {
+         -ms-flex: 100%;
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
+
+ .social-media-icons {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .social-media-icons a {
+     display: block;
+     margin: 0 10px;
+     font-size: 20px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ /*.social-media-icons a:hover {
+    color: #3b5998;
+     Replace with social media brand color 
+}*/
+
+ .social-media-icons a i {
+     display: block;
+     width: 40px;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     border-radius: 50%;
+     background-color: #7d7f85;
+     box-shadow: 0 0 8px 1px;
+     transition: .5s;
+ }
+
+ .fa-facebook-f:hover {
+     color: #0051ff;
+ }
+
+ .fa-twitter:hover {
+     color: #00acee;
+
+ }
+
+ .fa-instagram:hover {
+     color: fuchsia;
+ }
+
+ .fa-linkedin:hover {
+     color: #0072b1;
+
+ }
+
+ .fa-youtube:hover {
+     color: #c4302b;
+ }
+
+ .fa-google:hover {
+     color: #4285F4;
+ }
+
+ .fa-whatsapp:hover {
+     color: #25D366;
+ }
+
+ #dark-icon {
+     display: none;
+
+ }
+
+ .fa-telegram:hover {
+     color: #0088cc;
+ }
+
+ span {
+     cursor: pointer;
+ }
